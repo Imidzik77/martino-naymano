@@ -1,0 +1,203 @@
+1. Zdefiniuj przykładowe formatowanie formularza 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Kontaktowy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formularz Kontaktowy</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Wyślij">
+        </form>
+    </div>
+</body>
+</html>
+
+2. Zdefiniuj przykładowe podzielenie strony na bloki 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podział Strony na Bloki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .nav {
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+        .main {
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+        .content {
+            width: 75%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Moja Strona</h1>
+    </div>
+    <div class="nav">
+        <p>Nawigacja</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Główna Treść</h2>
+            <p>To jest przykładowa treść strony podzielonej na bloki.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Stopka</p>
+    </div>
+</body>
+</html>
+
+
+3. Wykonaj ćwiczenia 1,2 i 3 ze strony 81; 4 i 5 ze strony 82 i ćwiczenie nr 6 ze strony 83
+
+ćw. 1
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        p {
+            color: blue;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 150px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Przykład nagłówka z pozycjonowaniem grafiki</h1>
+    <img src="logo.jpg" alt="Logo">
+    <p>Zastosowanie właściwości z-index z wartością -1 spowoduje, że grafika osadzona zostanie za tekstem.</p>
+</body>
+</html>
+
+4. 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="pl">
+    <meta name="keywords" content="">
+    <style>
+        a:link {
+            color: #FF0;
+        }
+        a:visited {
+            color: yellow;
+        }
+        a:hover {
+            color: hotpink;
+        }
+        a:active {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <video width="500" height="400" controls>
+        <source src="film.mp4" type="video/mp4">
+        Twoja przeglądarka nie obsługuje elementu wideo.
+    </video>
+    <a href="index.php">To jest link do mojej strony</a>
+</body>
+</html>
+
+
+

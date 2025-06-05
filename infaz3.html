@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Starożytność - Grupa 2a</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #444;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Starożytność - Grupa 2a</h1>
+        <form action="#" method="POST">
+
+            <!-- Pytanie 1 -->
+            <div class="question">
+                <h2>1. Położenie geograficzne:</h2>
+                <label>Jakie obszary obejmują Huan-ho i Jangcy?</label>
+                <textarea name="q1_rivers" rows="3" placeholder="Twoja odpowiedź"></textarea>
+                <label>Jakie państwo przedstawiono na mapie? Z jakich czasów?</label>
+                <textarea name="q1_state" rows="3" placeholder="Twoja odpowiedź"></textarea>
+                <div class="image">
+                    <img src="obraz5.PNG" alt="">
+                </div>
+            </div>
+
+            <!-- Pytanie 2 -->
+            <div class="question">
+                <h2>2. Wspólne cechy pod względem warunków geograficznych:</h2>
+                <textarea name="q2_common" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <!-- Pytanie 3 -->
+            <div class="question">
+                <h2>3. Rodzaje pisma:</h2>
+                <table style="width: 100%; border: 1px solid #ccc; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="border: 1px solid #ccc; padding: 5px;">Państwo</th>
+                            <th style="border: 1px solid #ccc; padding: 5px;">Rodzaj pisma</th>
+                            <th style="border: 1px solid #ccc; padding: 5px;">Materiały pisarskie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 5px;">Egipt</td>
+                            <td style="border: 1px solid #ccc; padding: 5px;"><input type="text" name="q3_egypt_script"></td>
+                            <td style="border: 1px solid #ccc; padding: 5px;">Papirus, tusz roślinny</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 5px;">Fenicja</td>
+                            <td style="border: 1px solid #ccc; padding: 5px;"><input type="text" name="q3_phoenicia_script"></td>
+                            <td style="border: 1px solid #ccc; padding: 5px;">Glina, trzcinka</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 5px;">Indie</td>
+                            <td style="border: 1px solid #ccc; padding: 5px;"><input type="text" name="q3_india_script"></td>
+                            <td style="border: 1px solid #ccc; padding: 5px;">Papier, tusz roślinny</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pytanie 4 -->
+            <div class="question">
+                <h2>4. Religie starożytne:</h2>
+                <label>Które z religii starożytnych nie występują we współczesnym świecie lub straciły na popularności?</label>
+                <textarea name="q4_religions" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <!-- Pytanie 5 -->
+            <div class="question">
+                <h2>5. Tereny kultury greckiej:</h2>
+                <label>Zaznacz tereny obejmowane przez kulturę grecką w starożytności:</label>
+                <label><input type="checkbox" name="q5" value="balkan"> Półwysep Bałkański</label>
+                <label><input type="checkbox" name="q5" value="egean"> Wyspy Morza Egejskiego</label>
+                <label><input type="checkbox" name="q5" value="asia_minor"> Azja Mniejsza</label>
+                <label><input type="checkbox" name="q5" value="northern_europe"> Europa Północna</label>
+                <label><input type="checkbox" name="q5" value="india"> Indie</label>
+                <label><input type="checkbox" name="q5" value="crete"> Kreta</label>
+            </div>
+
+            <!-- Pytanie 6 -->
+            <div class="question">
+                <h2>6. Rodzaj państwowości starożytnej Grecji:</h2>
+                <label><input type="radio" name="q6" value="city_state"> Miasto-państwo</label>
+                <label><input type="radio" name="q6" value="polis"> Polis</label>
+                <label><input type="radio" name="q6" value="oligarchy"> Oligarchia</label>
+            </div>
+
+            <!-- Pytanie 7 -->
+            <div class="question">
+                <h2>7. Przyczyny wielkiej kolonizacji greckiej:</h2>
+                <label>Podaj co najmniej dwie przyczyny:</label>
+                <textarea name="q7_causes" rows="4" placeholder="Twoja odpowiedź"></textarea>
+                <div class="image">
+                    <img src="obraz6.PNG" alt="">
+                </div>
+            </div>
+
+            <!-- Pytanie 8 -->
+            <div class="question">
+                <h2>8. Ustrój polityczny Aten:</h2>
+                <label><input type="radio" name="q8" value="democracy"> Demokracja</label>
+                <label><input type="radio" name="q8" value="tyranny"> Tyrania</label>
+            </div>
+
+            <!-- Pytanie 9 -->
+            <div class="question">
+                <h2>9. Instytucje republikańskie Rzymu:</h2>
+                <label>Zaznacz instytucje republikańskie:</label>
+                <label><input type="checkbox" name="q9" value="emperor"> Cesarz</label>
+                <label><input type="checkbox" name="q9" value="consul"> Konsul</label>
+                <label><input type="checkbox" name="q9" value="senate"> Senat</label>
+                <label><input type="checkbox" name="q9" value="tribune"> Trybun ludowy</label>
+                       <img src="obraz7.PNG" alt="">
+                </div>
+
+            <!-- Pytanie 10 -->
+            <div class="question">
+                <h2>10. Rzym powstał według tradycji:</h2>
+                <label><input type="radio" name="q10" value="1239"> 1239</label>
+                <label><input type="radio" name="q10" value="753"> 753 p.n.e.</label>
+                <label><input type="radio" name="q10" value="800"> 800 p.n.e.</label>
+                <label><input type="radio" name="q10" value="1780"> 1780</label>
+           	
+ </div>
+
+
+            <!-- Pytanie 11 -->
+            <div class="question">
+                <h2>11. Osoby i ich pochodzenie:</h2>
+                <label>Hammurabi:</label>
+                <input type="text" name="q11_hammurabi" placeholder="Państwo i rola">
+                <label>Cheops:</label>
+                <input type="text" name="q11_cheops" placeholder="Państwo i rola">
+                <label>Budda:</label>
+                <input type="text" name="q11_buddha" placeholder="Państwo i rola">
+                <label>Salomon:</label>
+                <input type="text" name="q11_solomon" placeholder="Państwo i rola">
+                <div class="image">
+                    <img src="portrety.jpg" alt="Portrety starożytnych postaci">
+                </div>
+            </div>
+
+            <!-- Pytanie 12 -->
+            <div class="question">
+                <h2>12. Funkcjonowanie instytucji ateńskich w V w. p.n.e.:</h2>
+                <label>Jakie były zadania poszczególnych instytucji?</label>
+                <textarea name="q12_tasks" rows="4" placeholder="Twoja odpowiedź"></textarea>
+                <label>Kto wchodził w ich skład?</label>
+                <textarea name="q12_members" rows="4" placeholder="Twoja odpowiedź"></textarea>
+                <div class="image">
+                    <img src="instytucje_ateny.jpg" alt="Instytucje ateńskie">
+                </div>
+            </div>
+
+            <!-- Pytanie 13 -->
+            <div class="question">
+                <h2>13. Wyjaśnij pojęcia:</h2>
+                <label>Pryncypat:</label>
+                <textarea name="q13_principate" rows="3" placeholder="Twoja odpowiedź"></textarea>
+                <label>Cesarstwo:</label>
+                <textarea name="q13_empire" rows="3" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Wyślij odpowiedzi</button>
+        </form>
+    </div>
+</body>
+</html>

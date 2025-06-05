@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Starożytność</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #444;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Starożytność</h1>
+        <form action="#" method="POST">
+
+            <!-- Pytanie 1 -->
+            <div class="question">
+                <h2>1. Położenie geograficzne państw starożytnego wschodu:</h2>
+                <label>Jakie obszar przedstawia mapa?</label>
+                <input type="text" name="q1_map" placeholder="Twoja odpowiedź">
+
+                <label>Nazwij rzeki:</label>
+                <input type="text" name="q1_rivers" placeholder="Twoja odpowiedź">
+
+                <label>Spróbuj wpisać nazwy głównych miast:</label>
+                <textarea name="q1_cities" rows="4" placeholder="Twoja odpowiedź"></textarea>
+                <div class="image">
+                    <img src="obraz3.PNG" alt="">
+                </div>
+            </div>
+
+            <!-- Pytanie 2 -->
+            <div class="question">
+                <h2>2. Wspólnymi cechami wszystkich cywilizacji starożytnych były:</h2>
+                <textarea name="q2_common" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <!-- Pytanie 3 -->
+            <div class="question">
+                <h2>3. Rodzaje pisma:</h2>
+                <label>Egipt:</label>
+                <input type="text" name="q3_egypt" placeholder="Twoja odpowiedź">
+
+                <label>Fenicja:</label>
+                <input type="text" name="q3_phoenicia" placeholder="Twoja odpowiedź">
+            </div>
+
+            <!-- Pytanie 4 -->
+            <div class="question">
+                <h2>4. Na podstawie rysunków określ nazwę zabytku i kraj pochodzenia:</h2>
+                <label>1.</label>
+                <input type="text" name="q4_1" placeholder="Twoja odpowiedź">
+                <label>2.</label>
+                <input type="text" name="q4_2" placeholder="Twoja odpowiedź">
+                <label>3.</label>
+                <input type="text" name="q4_3" placeholder="Twoja odpowiedź">
+                <div class="image">
+                     <img src="obraz4.PNG" alt="">
+                </div>
+            </div>
+
+            <!-- Pytanie 5 -->
+            <div class="question">
+                <h2>5. Najstarsze cywilizacje greckie nie powstały:</h2>
+                <label><input type="radio" name="q5" value="a"> a) na Krecie</label>
+                <label><input type="radio" name="q5" value="b"> b) w Mykenach</label>
+                <label><input type="radio" name="q5" value="c"> c) w Sparcie</label>
+                <label><input type="radio" name="q5" value="d"> d) w Atenach</label>
+                <label><input type="radio" name="q5" value="e"> e) w Macedonii</label>
+            </div>
+
+            <!-- Pytanie 6 -->
+            <div class="question">
+                <h2>6. W starożytnej Grecji występowały następujące rodzaje ustroju politycznego:</h2>
+                <textarea name="q6" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <!-- Pytanie 7 -->
+            <div class="question">
+                <h2>7. Wymień skutki kolonizacji greckiej:</h2>
+                <textarea name="q7_effects" rows="6" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <!-- Pytanie 8 -->
+            <div class="question">
+                <h2>8. Podstawą ustroju politycznego Sparty była:</h2>
+                <label><input type="radio" name="q8" value="demokracja"> a) demokracja</label>
+                <label><input type="radio" name="q8" value="monarchia"> b) monarchia</label>
+            </div>
+
+            <!-- Pytanie 9 -->
+            <div class="question">
+                <h2>9. Na gruzach imperium Aleksandra Macedońskiego powstały następujące państwa:</h2>
+                <textarea name="q9_states" rows="6" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <!-- Pytanie 10 -->
+            <div class="question">
+                <h2>10. Rzym według badań archeologicznych powstawał:</h2>
+                <label><input type="radio" name="q10" value="1239"> a) 1239</label>
+                <label><input type="radio" name="q10" value="753"> b) 753 p.n.e.</label>
+                <label><input type="radio" name="q10" value="800"> c) 800 – 525 p.n.e.</label>
+                <label><input type="radio" name="q10" value="1980"> d) 1980</label>
+                <label><input type="radio" name="q10" value="575"> e) 575 p.n.e.</label>
+                <div class="image">
+                    <img src="powstanie_rzymu.jpg" alt="Powstanie Rzymu">
+                </div>
+            </div>
+
+            <!-- Pytanie 11 -->
+            <div class="question">
+                <h2>11. Wymień skutki podbojów rzymskich:</h2>
+                <textarea name="q11_effects" rows="6" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <!-- Pytanie 12 -->
+            <div class="question">
+                <h2>12. W roku ........... p.n.e. zawarty zostaje ...................... jako umowa:</h2>
+                <textarea name="q12_agreement" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <!-- Pytanie 13 -->
+            <div class="question">
+                <h2>13. Wyjaśnij pojęcia:</h2>
+                <label>Dominat:</label>
+                <input type="text" name="q13_dominat" placeholder="Twoja odpowiedź">
+                <label>Republika:</label>
+                <input type="text" name="q13_republic" placeholder="Twoja odpowiedź">
+            </div>
+
+            <button type="submit" class="submit-btn">Wyślij odpowiedzi</button>
+        </form>
+    </div>
+</body>
+</html>

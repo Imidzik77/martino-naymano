@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #444;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Historia - Quiz</h1>
+        <form action="#" method="post">
+            <div class="question">
+                <h2>1. Położenie geograficzne państw starożytnego Wschodu:</h2>
+                <p>Mezopotamia położona była w dorzeczu:</p>
+                <input type="text" name="question1" placeholder="Twoja odpowiedź">
+                <div class="image">
+                    <img src="obraz1.jpg.PNG" alt="">
+
+                </div>
+            </div>
+
+            <div class="question">
+                <h2>2. Wspólne cechy cywilizacji położonych nad rzekami:</h2>
+                <p>Wymień wspólne cechy:</p>
+                <textarea name="question2" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <div class="question">
+                <h2>3. Rodzaje pisma:</h2>
+                <p>Jakie rodzaje pisma przedstawione zostały na ilustracjach? Gdzie powstały?</p>
+                <input type="text" name="question3" placeholder="Twoja odpowiedź">
+                <div class="image">
+                      <img src="obraz2.PNG" alt="">
+              </div>
+            </div>
+
+            <div class="question">
+                <h2>4. Religie starożytności:</h2>
+                <p>Wymień trzy wielkie religie starożytności:</p>
+                <input type="text" name="question4" placeholder="Twoja odpowiedź">
+            </div>
+
+            <div class="question">
+                <h2>5. Powstanie Rzymu:</h2>
+                <p>W którym roku według tradycji powstał Rzym?</p>
+                <select name="question5">
+                    <option value="139">139</option>
+                    <option value="753">753</option>
+                    <option value="800">800</option>
+                    <option value="1880">1880</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <h2>6. Instytucje republikańskie:</h2>
+                <p>Zaznacz instytucje republikańskie:</p>
+                <label><input type="checkbox" name="question6" value="cesarza"> Cesarza</label><br>
+                <label><input type="checkbox" name="question6" value="konsula"> Konsula</label><br>
+                <label><input type="checkbox" name="question6" value="senatu"> Senatu</label><br>
+                <label><input type="checkbox" name="question6" value="trybuna ludowego"> Trybuna ludowego</label>
+            </div>
+
+            <div class="question">
+                <h2>7. Najstarsze cywilizacje greckie:</h2>
+                <p>Gdzie powstały najstarsze cywilizacje greckie? (Wybierz jedną):</p>
+                <select name="question7">
+                    <option value="Kreta">Kreta</option>
+                    <option value="Mykeny">Mykeny</option>
+                    <option value="Sparta">Sparta</option>
+                    <option value="Ateny">Ateny</option>
+                    <option value="Macedonia">Macedonia</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <h2>8. Plemiona greckie:</h2>
+                <p>Wymień plemiona greckie:</p>
+                <textarea name="question8" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <div class="question">
+                <h2>9. Ustroje polityczne starożytnej Grecji:</h2>
+                <p>Zaznacz rodzaje ustrojów politycznych:</p>
+                <label><input type="checkbox" name="question9" value="monarchia"> Monarchia</label><br>
+                <label><input type="checkbox" name="question9" value="republika"> Republika</label><br>
+                <label><input type="checkbox" name="question9" value="demokracja"> Demokracja</label><br>
+                <label><input type="checkbox" name="question9" value="oligarchia"> Oligarchia</label>
+            </div>
+
+            <div class="question">
+                <h2>10. Przyczyny podbojów rzymskich:</h2>
+                <p>Podaj co najmniej trzy przyczyny podbojów rzymskich:</p>
+                <textarea name="question10" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <div class="question">
+                <h2>11. Pierwszy triumwirat:</h2>
+                <p>Kto zawarł pierwszy triumwirat? (Wybierz co najmniej jednego):</p>
+                <label><input type="checkbox" name="question11" value="Pompejusz"> Pompejusz</label><br>
+                <label><input type="checkbox" name="question11" value="Krassus"> Krassus</label><br>
+                <label><input type="checkbox" name="question11" value="Cezar"> Cezar</label><br>
+                <label><input type="checkbox" name="question11" value="Dioklecjan"> Dioklecjan</label>
+            </div>
+
+            <div class="question">
+                <h2>12. Pojęcia:</h2>
+                <p>Wyjaśnij pojęcia "pryncypat" i "cesarstwo":</p>
+                <textarea name="question12" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <div class="question">
+                <h2>13. Przyczyny upadku Cesarstwa Zachodniorzymskiego:</h2>
+                <p>Wymień przyczyny:</p>
+                <textarea name="question13" rows="4" placeholder="Twoja odpowiedź"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Wyślij odpowiedzi</button>
+        </form>
+    </div>
+</body>
+</html>
